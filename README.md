@@ -9,15 +9,8 @@ Spring Boot 기반의 OAuth2 로그인 애플리케이션입니다.
 
 ## 설정 방법
 
-### 1. 환경 변수 설정
-프로젝트 루트에 `.env` 파일을 생성하고 다음 내용을 추가하세요:
 
-```bash
-# .env.example 파일을 복사하여 .env 파일 생성
-cp .env.example .env
-```
-
-### 2. OAuth2 클라이언트 정보 설정
+### OAuth2 클라이언트 정보 설정
 각 OAuth Provider에서 클라이언트 ID와 Secret을 발급받아 `.env` 파일에 설정하세요.
 
 #### Google OAuth 설정
@@ -35,7 +28,7 @@ cp .env.example .env
 2. 애플리케이션 생성 후 카카오 로그인 설정
 3. 리다이렉트 URI: `http://localhost:8080/login/oauth2/code/kakao`
 
-### 3. 애플리케이션 실행
+### 애플리케이션 실행
 ```bash
 ./gradlew bootRun
 ```
